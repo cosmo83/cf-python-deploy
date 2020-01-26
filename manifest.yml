@@ -1,0 +1,11 @@
+---
+applications:
+- name: myapp
+  host: cf-python-test
+  path: .
+  memory: 128M
+  buildpack: python_buildpack
+  command: python run.py
+  services:
+    - kavskagxdb
+
